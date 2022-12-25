@@ -14,5 +14,9 @@ export const HeroSubtitle = ({ children }: HeroElementProps) => {
 };
 
 export const Hero = ({ children }: HeroProps) => {
-  return <div className="text-center">{children}</div>;
+  return (
+    <div className="text-center flex flex-col justify-center items-center">
+      {children}
+    </div>
+  );
 };
