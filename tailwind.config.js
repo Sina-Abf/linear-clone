@@ -6,10 +6,12 @@ module.exports = {
       sans: '"SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu, Cantarell,"Open Sans","Helvetica Neue",sans-serif',
     },
     colors: {
+      transparent: "transparent",
       white: "#fff",
       background: "#000212",
       "white-a08": "rgba(255, 255, 255, 0.08)",
       gray: "rgb(138, 143, 152)",
+      "gray-dark": "#222326",
     },
     fontSize: {
       "5xl": ["8rem", "1"],
@@ -32,6 +34,7 @@ module.exports = {
       10: "4rem",
       11: "4.4rem",
       12: "4.8rem",
+      "navigation-height": "var(--navigation-height)",
     },
     backgroundImage: {
       "primary-gradient":
