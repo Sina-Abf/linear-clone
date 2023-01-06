@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full border-b border-white-a08 backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
-        <Link className="flex items-center text-md" href="/">
+        <Link className="flex items-center text-lg" href="/">
           <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> Linear
         </Link>
         <div
@@ -49,7 +49,7 @@ const Header = () => {
             <ul
               className={classNames(
                 "flex flex-col md:flex-row h-full md:items-center [&_li]:ml-6 [&_li]:border-b [&_li]:border-gray-dark md:[&_li]:border-none",
-                "[&_a]:text-md ease-in [&_a]:duration-300 [&_a]:translate-y-8 md:[&_a]:translate-y-0  [&_a]:h-navigation-height [&_a]:flex [&_a]:items-center [&_a]:w-full [&_a:hover]:text-gray [&_a]:transition-[color, transform] [&_a]:md:transition-colors [&_a]:mr-6 md:[&_a]:text-sm",
+                "[&_a]:text-lg ease-in [&_a]:duration-300 [&_a]:translate-y-8 md:[&_a]:translate-y-0  [&_a]:h-navigation-height [&_a]:flex [&_a]:items-center [&_a]:w-full [&_a:hover]:text-gray [&_a]:transition-[color, transform] [&_a]:md:transition-colors [&_a]:mr-6 md:[&_a]:text-md",
                 hamburgerMenuIsOpen && "[&_a]:translate-y-0"
               )}
             >
@@ -78,7 +78,7 @@ const Header = () => {
           </nav>
         </div>
         <div className="ml-auto h-full flex items-center">
-          <Link className="text-sm mr-6" href="#">
+          <Link className="text-md mr-6" href="#">
             Log in
           </Link>
           <Button href="#">Sign up</Button>

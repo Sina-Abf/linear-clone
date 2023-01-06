@@ -49,7 +49,7 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className="mt-12 border-t border-transparent py-[5.6rem] text-sm">
+    <footer className="mt-12 border-t border-transparent py-[5.6rem] text-md">
       <Container className="flex flex-col justify-between lg:flex-row">
         <div>
           <div className="flex h-full flex-row justify-between lg:flex-col">

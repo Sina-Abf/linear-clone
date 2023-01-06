@@ -12,13 +12,21 @@ module.exports = {
       "white-a08": "rgba(255, 255, 255, 0.08)",
       gray: "rgb(138, 143, 152)",
       "gray-dark": "#222326",
+      "primary-text": "#b4bcd0",
     },
     fontSize: {
-      "5xl": ["8rem", "1"],
-      lg: ["2.2rem", "1.3"],
-      md: "1.6rem",
-      sm: "1.4rem",
       xs: "1.3rem",
+      sm: "1.4rem",
+      md: "1.6rem",
+      lg: "1.8rem",
+      xl: ["2.2rem", "1.3"],
+      "2xl": "2.4rem",
+      "3xl": "2.6rem",
+      "4xl": "3.2rem",
+      "5xl": "4rem",
+      "6xl": ["4.4rem", "1"],
+      "7xl": ["4.8rem", "1"],
+      "8xl": ["8rem", "1"],
     },
     spacing: {
       0: "0",
@@ -39,6 +47,8 @@ module.exports = {
     backgroundImage: {
       "primary-gradient":
         "linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);",
+      "page-gradient":
+        "radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), transparent)",
     },
     boxShadow: {
       primary: "rgb(80 63 205 / 50%) 0px 1px 40px",

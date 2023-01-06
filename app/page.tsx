@@ -7,11 +7,13 @@ export default function Home() {
     <Container>
       <Hero>
         <HeroTitle>
-          Linear is a better way <br /> to build products
+          Linear is a better way <br className="hidden md:block" /> to build
+          products
         </HeroTitle>
         <HeroSubtitle>
           Meet the new standard for modern software development.
-          <br /> Streamline issues, sprints, and product roadmaps.
+          <br className="hidden md:block" /> Streamline issues, sprints, and
+          product roadmaps.
         </HeroSubtitle>
         <Image width="924" height="924" src="/img/hero.webp" alt="Hero image" />
       </Hero>
