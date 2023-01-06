@@ -12,8 +12,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full border-b border-white-a08 backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
-        <Link className="flex items-center" href="/">
-          <Logo className="w-auto h-[1.8rem] mr-4" />
+        <Link className="flex items-center text-md" href="/">
+          <Logo className="mr-4 h-[1.8rem] w-[1.8rem]" /> Linear
         </Link>
         <div
           className={classNames(
@@ -23,7 +23,7 @@ const Header = () => {
         >
           <nav
             className={classNames(
-              "h-[calc(100vh_-_var(--navigation-height))] md:block fixed md:opacity-100 md:relative top-navigation-height left-0 md:top-0 w-full md:w-auto md:h-auto md:bg=transparent overflow-auto bg-background transition-opacity duration-500",
+              "h-[calc(100vh_-_var(--navigation-height))] md:block fixed md:opacity-100 md:relative top-navigation-height left-0 md:top-0 w-full md:w-auto md:h-auto md:bg-transparent overflow-auto bg-background transition-opacity duration-500",
               hamburgerMenuIsOpen ? "opacity-100" : "opacity-0"
             )}
           >
