@@ -23,14 +23,16 @@ const Header = () => {
         >
           <nav
             className={classNames(
-              "h-[calc(100vh_-_var(--navigation-height))] md:block fixed md:opacity-100 md:relative top-navigation-height left-0 md:top-0 w-full md:w-auto md:h-auto md:bg-transparent overflow-auto bg-background transition-opacity duration-500",
-              hamburgerMenuIsOpen ? "opacity-100" : "opacity-0"
+              "h-[calc(100vh_-_var(--navigation-height))] md:translate-x-0 md:block fixed md:opacity-100 md:relative top-navigation-height left-0 md:top-0 w-full md:w-auto md:h-auto md:bg-transparent overflow-auto bg-background transition-opacity duration-500 md:transition-none",
+              hamburgerMenuIsOpen
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 translate-x-[-100vw]"
             )}
           >
             <ul
               className={classNames(
                 "flex flex-col md:flex-row h-full md:items-center [&_li]:ml-6 [&_li]:border-b [&_li]:border-gray-dark md:[&_li]:border-none",
-                "[&_a]:text-md ease-in [&_a]:duration-300 [&_a]:translate-y-8 md:[&_a]:translate-y-0  [&_a]:h-navigation-height [&_a]:flex [&_a]:items-center [&_a]:w-full [&_a:hover]:text-gray [&_a]:transition-[color, transform] [&_a]:mr-6 md:[&_a]:text-sm",
+                "[&_a]:text-md ease-in [&_a]:duration-300 [&_a]:translate-y-8 md:[&_a]:translate-y-0  [&_a]:h-navigation-height [&_a]:flex [&_a]:items-center [&_a]:w-full [&_a:hover]:text-gray [&_a]:transition-[color, transform] [&_a]:md:transition-colors [&_a]:mr-6 md:[&_a]:text-sm",
                 hamburgerMenuIsOpen && "[&_a]:translate-y-0"
               )}
             >
