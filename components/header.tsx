@@ -1,7 +1,7 @@
 "use client";
 import classNames from "classnames";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "./button";
 import Container from "./container";
 import HamburgerIcon from "./icons/hamburger";
@@ -9,6 +9,23 @@ import Logo from "./icons/logo";
 
 const Header = () => {
   const [hamburgerMenuIsOpen, setHamburgerMenuIsOpen] = useState(false);
+  useEffect(() => {
+    document
+      .querySelector("html")
+      ?.classList.toggle("overflow-hidden", hamburgerMenuIsOpen);
+  }, [hamburgerMenuIsOpen]);
+
+  useEffect(() => {
+    const closeHamburgerNavigation = () => setHamburgerMenuIsOpen(false);
+    window.addEventListener("orientationchange", closeHamburgerNavigation);
+    window.addEventListener("resize", closeHamburgerNavigation);
+
+    return () => {
+      window.removeEventListener("orientationchange", closeHamburgerNavigation);
+      window.removeEventListener("resize", closeHamburgerNavigation);
+    };
+  }, [setHamburgerMenuIsOpen]);
+
   return (
     <header className="fixed top-0 left-0 w-full border-b border-white-a08 backdrop-blur-[12px]">
       <Container className="flex h-navigation-height">
