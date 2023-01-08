@@ -8,8 +8,9 @@ module.exports = {
     colors: {
       transparent: "transparent",
       white: "#fff",
+      "off-white": "#f7f8f8",
+      "transparent-white": "rgba(255, 255, 255, 0.08)",
       background: "#000212",
-      "white-a08": "rgba(255, 255, 255, 0.08)",
       gray: "rgb(138, 143, 152)",
       "gray-dark": "#222326",
       "primary-text": "#b4bcd0",
@@ -31,7 +32,7 @@ module.exports = {
     spacing: {
       0: "0",
       1: "0.4rem",
-      2: "0.8.rem",
+      2: "0.8rem",
       3: "1.2rem",
       4: "1.6rem",
       5: "2rem",
