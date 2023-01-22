@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { cva, VariantProps } from "class-variance-authority";
+import { AnchorHTMLAttributes } from "react";
 
 interface ButtonProps extends VariantProps<typeof buttonClasses> {
   children: React.ReactNode;
@@ -35,9 +36,13 @@ export const IconWrapper = ({ children }: { children: React.ReactNode }) => (
   <span className="icon-wrapper">{children}</span>
 );
 
-const Button = ({ children, href, variant, size }: ButtonProps) => {
+const Button = ({ children, href, variant, size, ...props }: ButtonProps) => {
   return (
-    <Link className={buttonClasses({ variant, size })} href={href}>
+    <Link
+      {...props}
+      className={buttonClasses({ variant, size, className: props.className })}
+      href={href}
+    >
       {children}
     </Link>
   );
